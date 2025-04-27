@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>पासवर्ड खोजें</title>
+</head>
+<body>
+    <h1>पासवर्ड सर्च टूल</h1>
+    <form method="POST">
+        <label>पासवर्ड दर्ज करें:</label>
+        <input type="text" name="password" required>
+        <button type="submit">खोजें</button>
+    </form>
+
+    {% if result %}
+        <h2>परिणाम: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
